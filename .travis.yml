@@ -1,0 +1,30 @@
+os: linux
+dist: focal
+language: python
+
+python:
+  - 3.9
+
+install:
+  - sudo apt -y install python3-distutils
+  - sudo apt -y install python3-pip
+  - sudo apt install -y git
+  - git clone https://github.com/kivy/buildozer.git
+  - python3 -m site
+  - ls -l
+  - python3 setup.py install
+  - cd ..
+  - ls -l
+
+  - sudo apt update
+  - sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autocont pkg zlib1g-dev libncurses5-dev libtinfo5 cmake libffi-dev lebssl-dev
+  - pip3 install --upgrade Cython==0.29.19 virtualenv
+  - export PATH=$PATH:~/.local/bin/
+  - ls -l 
+  - yes I buildozer android debug
+  - ls -l
+  - ls bin/ -l
+  - echo "TODO"
+  - gem install dpl --pre
+  - dpl releases --token $GIT_TOK --file "bin/appkivy-0.9-armeabi-v7a-debug.apk" --tag_name "v.0.9"
+  - echo "TODO 2"
