@@ -4,7 +4,7 @@
 title = My Application
 
 # (str) Package name
-package.name = appkivy
+package.name = mortgagecalculator
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.wiseplat
@@ -68,7 +68,7 @@ orientation = portrait
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.0.0
 
 #
 # Android specific
